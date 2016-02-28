@@ -72,6 +72,16 @@ Toggle lookups on IP's received in private messages,
 /set ipdetective_query OFF|ON
 ```
 
+Specify a space separated list of channels to look up IPs from, used in combination with setting below
+```
+/set ipdetective_specific_channels OFF|ON
+```
+
+Toggle lookups on IP's only from specific channels,
+```
+/set ipdetective_specific_channels OFF|ON
+```
+
 ### Usage
 
 To make a manual lookup,
