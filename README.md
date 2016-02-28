@@ -57,12 +57,12 @@ Toggle if the script does lookups on recevied IPs, either in query or in channel
 /set ipdetective_enabled OFF|ON
 ```
 
-If ASN is not to be used, in irssi,
+Toggle if ASN is not to be used,
 ```
-/set ipdetective_asn OFF
+/set ipdetective_asn OFF|ON
 ```
 
-If the GeoLite databases reside in another directory than /usr/share/GeoIP, in irssi,
+If the GeoLite databases reside in another directory than /usr/share/GeoIP,
 ```
 /set ipdetective_db_dir /home/user/mydbdir
 ```
@@ -74,7 +74,7 @@ Toggle lookups on IP's received in private messages,
 
 Specify a space separated list of channels to look up IPs from, used in combination with setting below
 ```
-/set ipdetective_specific_channels OFF|ON
+/set ipdetective_channels #chan1 #chan2 ##chan3
 ```
 
 Toggle lookups on IP's only from specific channels,
@@ -84,8 +84,7 @@ Toggle lookups on IP's only from specific channels,
 
 ### Usage
 
-To make a manual lookup,
+To make a manual lookup of an IP address,
 ```
-/ipdetective <ip>
+/ipdetective 8.8.8.8
 ```
-e.g. /ipdetective 8.8.8.8
