@@ -54,3 +54,8 @@ If the GeoLite databases reside in another directory than /usr/share/GeoIP, in i
 ```
 /set ipdetective_db_dir /home/user/mydbdir
 ```
+
+Toggle lookups on IP's received in private messages,
+```
+/set ipdetective_query OFF|ON
+```
