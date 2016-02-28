@@ -45,6 +45,12 @@ DatabaseDirectory /usr/share/GeoIP
 
 ### Configuration
 
-If ASN is not to be used, set ipdetective_asn to OFF
+If ASN is not to be used, in irssi,
+```
+/set ipdetective_asn OFF
+```
 
-If the GeoLite databases reside in another directory than /usr/share/GeoIP, set ipdetective_db_dir to this directory (e.g. /home/user/mydbdir)
+If the GeoLite databases reside in another directory than /usr/share/GeoIP, in irssi,
+```
+/set ipdetective_db_dir /home/user/mydbdir
+```
