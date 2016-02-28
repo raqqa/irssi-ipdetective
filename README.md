@@ -32,7 +32,11 @@ install Regexp::Common::net
 
 #### geoipupdate (recommended)
 
-[geoipupdate] (https://github.com/maxmind/geoipupdate), follow instructions there
+[geoipupdate] (https://github.com/maxmind/geoipupdate), follow instructions there for installation
+
+Replace the /usr/local/etc/GeoIP.conf (on Debian/Ubuntu at least) with the below GeoIP.conf
+
+Then sudo geoipupdate
 
 ##### My GeoIP.conf for installing country and AS GeoLite databases
 
