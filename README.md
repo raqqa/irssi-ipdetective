@@ -32,11 +32,14 @@ install Regexp::Common::net
 
 #### geoipupdate (recommended)
 
-[geoipupdate] (https://github.com/maxmind/geoipupdate), follow instructions there for installation
+* [geoipupdate] (https://github.com/maxmind/geoipupdate), follow instructions there for installation
+* Replace the /usr/local/etc/GeoIP.conf (on Debian/Ubuntu at least) with the below GeoIP.conf
+* sudo geoipupdate
 
-Replace the /usr/local/etc/GeoIP.conf (on Debian/Ubuntu at least) with the below GeoIP.conf
+OR
 
-Then sudo geoipupdate
+* Download the GeoLite ASN (optional) and GeoLite Country manually from [GeoLite Legacy Downloadable Databases] (http://dev.maxmind.com/geoip/legacy/geolite/)
+* Extract to /usr/share/GeoIP (or another place, but change settings according to Configuration section below), do not change the names of the files (GeoLiteASNum.dat & GeoLiteCountry.dat)
 
 ##### My GeoIP.conf for installing country and AS GeoLite databases
 
@@ -48,6 +51,11 @@ DatabaseDirectory /usr/share/GeoIP
 ```
 
 ### Configuration
+
+Toggle if the script does lookups on recevied IPs, either in query or in channel, does not impact manual lookup,
+```
+/set ipdetective_enabled OFF|ON
+```
 
 If ASN is not to be used, in irssi,
 ```
@@ -63,3 +71,11 @@ Toggle lookups on IP's received in private messages,
 ```
 /set ipdetective_query OFF|ON
 ```
+
+### Usage
+
+To make a manual lookup,
+```
+/ipdetective <ip>
+```
+e.g. /ipdetective 8.8.8.8
